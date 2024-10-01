@@ -1,22 +1,44 @@
-<!-- eslint-disable prettier/prettier -->
 <template>
-    <div class="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+  <nav class="nav">
+    <div class="container">
+      <router-link class="link" to="/">Home</router-link>
+      <router-link class="link" to="/about">Projects</router-link>
     </div>
+  </nav>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "nav-bar",
+  name: "NavBar",
 });
 </script>
 
 <style scoped>
 .nav {
-  background-color: red;
-  height: 3vh;
+  background-color: #6a0dad; /* Vibrant purple */
+  height: 60px; /* Height for navbar */
+  display: flex;
+  align-items: center; /* Center links vertically */
+  padding: 0 2rem; /* Horizontal padding */
+}
+
+.container {
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 1rem; /* Space between links */
+}
+
+.link {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Font size */
+  padding: 0.5rem 1rem; /* Padding for better click area */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+  color: #ffeb3b; /* Hover color */
 }
 </style>
