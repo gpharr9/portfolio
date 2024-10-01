@@ -20,36 +20,35 @@
     </div>
   </section>
   <section class="technologies">
-    <div class="container">
-      <h1>Technologies I'm Proficient With!</h1>
+    <h1>Technologies I'm Proficient With!</h1>
+  <v-row>
+    <v-col>
+      <div class="techcontainer">
+      <h3>Front End Technologies</h3>
+      <spacer />
       <ul>
         <li>Vue.js</li>
         <li>React</li>
         <li>Typescript</li>
-        <li>AWS</li>
-        <li>Postgres</li>
+        <li>Flask</li>
       </ul>
     </div>
-  </section>
-
-  <section class="contact">
-    <div class="container">
-      <h1>Contact Information</h1>
-      <p>Email: <a href="mailto:gpharr@gmail.com">gpharr@gmail.com</a></p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/gpharr/" target="_blank">
-          linkedin.com/in/gpharr/
-        </a>
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/gpharr9" target="_blank">
-          github.com/gpharr9
-        </a>
-      </p>
+    </v-col>
+    <v-col>
+      <div class="techcontainer">
+      <h3>Back End Technologies</h3>
+      <spacer />
+      <ul>
+        <li>AWS</li>
+        <li>Postgres</li>
+        <li>Python</li>
+        <li>DynamoDB</li>
+        <li>SQL</li>
+      </ul>
     </div>
-  </section>
+    </v-col>
+  </v-row>  
+</section>
 </template>
 
 <script>
@@ -67,6 +66,12 @@ export default {
   background-color: #f9f9f9; /* Consistent background color */
 }
 
+.techcontainer {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  background-color: #f9f9f9;
+}
 .technologies {
   border-top: 2px solid #6a0dad; /* Distinctive top border for separation */
 }

@@ -21,7 +21,11 @@ export default defineComponent({
   height: 60px; /* Height for navbar */
   display: flex;
   align-items: center; /* Center links vertically */
-  padding: 0 2rem; /* Horizontal padding */
+  position: sticky;
+  top: 0; /* Stick to the top */
+  background-color: #6a0dad; /* Background color */
+  z-index: 1000; /* Ensure it’s above other elements */
+  padding: 1rem 0; /* Padding for visual spacing */
 }
 
 .container {
